@@ -21,6 +21,8 @@ function nowInMinutes() {
   return now.getHours() * 60 + now.getMinutes();
 }
 
+
+
 function changeFrame() {
   // const now = new Date();
   curr_frame = null;
@@ -31,7 +33,8 @@ function changeFrame() {
 
     if (nowMinutes >= toMinutes(frame.start) && nowMinutes <= toMinutes(frame.end)){
         document.getElementById("frame-name").innerText = frame.name;
-      }
+        document.body.style.backgroundImage = `url(${frame.background})`;
+    }
   }
 }
 

@@ -1,6 +1,16 @@
-body {
+html, body {
+  height: 100%;
   margin: 0;
-  background: var(--bg);
-  color: var(--text);
-  font-family: system-ui, sans-serif;
+}
+
+body {
+  min-height: 100vh;   /* ensures visible area */
+  background: url("./wallpapers/arindam-saha-PwzISwC2kLs-unsplash.jpg") repeat 0 0;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #e5e7eb;
+
 }
